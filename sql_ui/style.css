@@ -1,8 +1,64 @@
-
-body {
-    font-family: Arial, sans-serif;
+/* Base Styles */
+textarea {
+  border-radius: 8px;
+  padding: 1rem;
+  resize: none;
+  font-family: monospace;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-textarea {
-    resize: none;
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
+}
+
+/* Placeholder Styling */
+textarea::placeholder {
+  opacity: 1;
+}
+
+/* Light Theme */
+html[data-theme="light"] body {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+html[data-theme="light"] .glass-card {
+  background: #ffffff;
+  color: #000;
+}
+
+html[data-theme="light"] textarea,
+html[data-theme="light"] #sqlQuery,
+html[data-theme="light"] #queryResults {
+  background-color: #f1f3f5;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="light"] textarea::placeholder {
+  color: #666;
+}
+
+/* Dark Theme */
+html[data-theme="dark"] body {
+  background-color: rgba(18, 24, 38, 0.95);
+  color: #fff;
+}
+
+html[data-theme="dark"] .glass-card {
+  background: rgba(18, 24, 38, 0.95);
+  color: #fff;
+}
+
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] #sqlQuery,
+html[data-theme="dark"] #queryResults {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+html[data-theme="dark"] textarea::placeholder {
+  color: #bbb;
 }
