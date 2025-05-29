@@ -68,10 +68,10 @@ SELECT * FROM employees WHERE department = 'Marketing';
 ## Screenshots
 
 ### Light Mode
-![Light Mode Result](screenshots/light-mode-result.png)
+![Light Mode Result](assets/Result_LightMode.png)
 
 ### Dark Mode
-![Dark Mode Result](screenshots/dark-mode-result.png)
+![Dark Mode Result](assets/Result_DarkMode.png)
 
 ## Future Enhancements
 
