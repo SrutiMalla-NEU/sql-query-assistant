@@ -57,23 +57,26 @@ Open `sql_ui/index.html` directly in your browser.
 ## 💡 Example Prompt
 
 ```
-Show me all employees from the HR department
+Show me all employees from the Marketing department
 ```
 
 Returns:
 ```sql
-SELECT * FROM employees WHERE department = 'HR';
+SELECT * FROM employees WHERE department = 'Marketing';
 ```
 
 ## Screenshots
 
+### Light Mode
+![Light Mode Result](screenshots/light-mode-result.png)
 
+### Dark Mode
+![Dark Mode Result](screenshots/dark-mode-result.png)
 
 ## Future Enhancements
 
 - ✅ Save query history
 - ✅ Add user authentication
-- ✅ Dark mode support
 - ✅ Export results to CSV
 - ✅ Host on Render / Vercel / Railway
 
@@ -81,4 +84,4 @@ SELECT * FROM employees WHERE department = 'HR';
 
 Feel free to fork this repo, raise issues or open PRs!
 
-Built by Sruti Smitha Malla(https://www.linkedin.com/in/yourprofile)
+Built by Sruti Smitha Malla(www.linkedin.com/in/sruti-malla)
